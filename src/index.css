@@ -1,0 +1,7 @@
+:root {
+  --primary: #eee7c3;
+  --seconary: #aaa;
+  --btn-text: var(--primary);
+  --btn-hover: #cabd7f;
+  --bg: white;
+}

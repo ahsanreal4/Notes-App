@@ -1,0 +1,70 @@
+.notes-list-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notes-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes-list-container > div:hover {
+  cursor: pointer;
+}
+
+.notes-list-search-input-container {
+  width: 40vw;
+}
+
+.take-note-container {
+  width: 40vw;
+  height: 80px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.take-note-container:hover {
+  cursor: pointer;
+  background-color: var(--btn-hover);
+}
+
+.take-note-container > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.take-note-container > div > div {
+  display: flex;
+  gap: 5px;
+}
+
+.take-note-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .notes-list-search-input-container {
+    width: 70vw;
+  }
+
+  .take-note-container {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .notes-list-search-input-container {
+    width: 90vw;
+  }
+
+  .take-note-container {
+    width: 90vw;
+  }
+}
